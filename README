@@ -1,0 +1,16 @@
+config server git repository
+https://github.com/laputancn/springcloud-configserver
+https://github.com/laputancn/springcloud-configserver-perf
+
+
+http://localhost:8080/rate
+http://localhost:8888/s1rates/default/main
+
+POST
+http://localhost:8888/encrypt
+http://localhost:8080/actuator/refresh
+http://localhost:8080/actuator
+
+command line
+lsof -i :8888
+kill -9 pid
