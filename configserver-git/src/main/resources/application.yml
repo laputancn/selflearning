@@ -1,0 +1,24 @@
+server:
+    port: 8888
+encrypt:
+    key: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+spring:
+    security:
+        user:
+            name: laputancn
+            password: password
+    cloud:
+        config:
+            server:
+                encrypt:
+                    enabled : false
+                git:
+                    uri: https://github.com/laputancn/springcloud-configserver
+                    search-paths:
+                    - station*
+                    repos:
+                        perf:
+                            pattern: '*/perf'
+                            uri: https://github.com/laputancn/springcloud-configserver-perf
+                            search-paths:
+                            - station*
